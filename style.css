@@ -1,0 +1,117 @@
+html {
+    font-family: tahoma;
+}
+
+body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.0) url("/images/IMG_3632.png") center center/cover no-repeat fixed;
+    background-position: 35px 30%;
+    position: absolute;
+    overflow: hidden;
+
+}
+
+a{
+    color: #8f8d8d;
+    text-decoration: none;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 1.0);
+    position: absolute;
+    z-index: 1;
+}
+.navbar {
+    height: 100%;
+    width: 150px;
+    background-color: #333;
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 0;
+    backdrop-filter: blur(5px);
+}
+
+.user-headshot {
+    overflow: hidden;
+    width: 150px;
+    height: auto;
+    top: 10;
+    left: 0;
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li{
+    list-style: none;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    flex-direction: column;
+}
+
+ion-icon{
+    color: #8f8d8d;
+}
+
+.navbar li ion-icon{
+    font-size: 24px;
+    text-align: center;
+    padding-left: 58px;
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 3px;
+    justify-content: center;
+    color: #8f8d8d;
+}
+
+.social-media{
+    margin-top: 280px;
+    text-align: center;
+}   
+
+.social-media a{
+    font-size: 22px;
+    padding: 1px;
+}
+
+.navbar ion-icon a:hover{
+    color:gainsboro;
+}
+
+.navbar .copyright-user p{
+    font-size: 11px;
+    text-align: center;
+    color: dimgray;
+    margin-top: 0px;
+    padding-top: 5px;
+}
+
+.navbar .social-media ion-icon:hover{
+    color: gainsboro;
+}
+
+.navbar ul li:hover{
+    color:gainsboro
+}
+
+
+
+
