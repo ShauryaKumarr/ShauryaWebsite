@@ -8,10 +8,10 @@ body {
     margin: 0;
     padding: 0;
     background: rgba(255, 255, 255, 0.0) url("/images/IMG_3632.png") center center/cover no-repeat fixed;
-    background-position: 35px 30%;
+    background-position: 35px 40%;
     position: absolute;
     overflow: hidden;
-
+    z-index: -1;
 }
 
 a{
@@ -20,9 +20,11 @@ a{
 }
 
 .overlay{
-    background-color: rgba(0, 0, 0, 1.0);
-    position: absolute;
+    background-color: rgba(251, 249, 249, 0.1);
+    position: fixed;
     z-index: 1;
+    width: 100%;
+    height: 100%
 }
 .navbar {
     height: 100%;
@@ -83,17 +85,13 @@ ion-icon{
 }
 
 .social-media{
-    margin-top: 280px;
+    margin-top: 420px;
     text-align: center;
 }   
 
 .social-media a{
     font-size: 22px;
     padding: 1px;
-}
-
-.navbar ion-icon a:hover{
-    color:gainsboro;
 }
 
 .navbar .copyright-user p{
@@ -104,14 +102,19 @@ ion-icon{
     padding-top: 5px;
 }
 
+/* hover effect for social media icons */
 .navbar .social-media ion-icon:hover{
     color: gainsboro;
 }
 
-.navbar ul li:hover{
-    color:gainsboro
+/* hover effects for li elements*/
+.navbar li:hover ion-icon,
+.navbar li:hover a {
+    color: gainsboro; 
 }
 
-
-
-
+/* timing of hover effect */
+.navbar li ion-icon,
+.navbar li a {
+    transition: color 0.3s ease-in-out;
+}
